@@ -17,6 +17,15 @@ public class Pair<K, V> {
         this.value = value;
     }
 
+    public Pair<V,K> swap(){
+        return new Pair<V,K>(value, key);
+    }
+
+    @Override
+    public String toString(){
+        return "Pair{key=" + key + ", value=" + value + "}";
+    }
+
     private K key;
     private V value;
 
